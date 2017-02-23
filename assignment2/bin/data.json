@@ -1,0 +1,386 @@
+{
+	"locations" : [
+		"hall1",
+		"hall_A",
+		"hall_B",
+		"hall_C",
+		"hall_D",
+		"bathroom",
+		"roomA",
+		"roomB",
+		"roomC",
+		"roomD",
+		"kitchen1",
+		"kitchen2"
+	],
+	"details" : [
+		{
+			"name" : "hall1",
+			"exits" : [
+				{
+					"direction":"north",
+					"neighbor": "hall_B"				
+				},{
+					"direction":"east",
+					"neighbor": "hall_A"
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/hall/hall1_north.jpg"					
+				},{
+					"direction":"east",	
+					"path": "resources/views/hall/hall1_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/hall/hall1_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/hall/wall.jpg"
+				}
+			],
+			"description" : "This is the beginning of our flat",
+			"logicmap" : "resources/logicmap/hall1.jpg"
+			
+		},{
+			"name" : "hall_A",
+			"exits" : [
+				{
+					"direction":"east",
+					"neighbor": "bathroom"				
+				},{
+					"direction":"south",
+					"neighbor": "roomA"
+				},{
+					"direction":"west",
+					"neighbor": "hall1"
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/hall/hall_A_north.jpg"					
+				},{
+					"direction":"east",	
+					"path": "resources/views/hall/hall_A_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/hall/hall_A_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/hall/hall_A_west.jpg"
+				}
+			],
+			"description" : "This is the entries of bathroom and roomA",
+			"logicmap" : "resources/logicmap/hall_A.jpg"
+			
+		},{
+			"name" : "hall_B",
+			"exits" : [
+				{
+					"direction":"east",
+					"neighbor": "roomB"				
+				},{
+					"direction":"south",
+					"neighbor": "hall1"
+				},{
+					"direction":"north",
+					"neighbor": "hall_C"
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/hall/hall_B_north.jpg"					
+				},{
+					"direction":"east",	
+					"path": "resources/views/hall/hall_B_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/hall/hall_B_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/hall/wall.jpg"
+				}
+			],
+			"description" : "This is the entry of RoomB",
+			"logicmap" : "resources/logicmap/hall_B.jpg"
+			
+		},{
+			"name" : "hall_C",
+			"exits" : [
+				{
+					"direction":"east",
+					"neighbor": "roomC"				
+				},{
+					"direction":"south",
+					"neighbor": "hall_B"
+				},{
+					"direction":"north",
+					"neighbor": "hall_D"
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/hall/hall_C_north.jpg"					
+				},{
+					"direction":"east",	
+					"path": "resources/views/hall/hall_C_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/hall/hall_C_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/hall/wall.jpg"
+				}
+			],
+			"description" : "This is the entry of RoomC",
+			"logicmap" : "resources/logicmap/hall_C.jpg"
+			
+		},{
+			"name" : "hall_D",
+			"exits" : [
+				{
+					"direction":"east",
+					"neighbor": "roomD"				
+				},{
+					"direction":"south",
+					"neighbor": "hall_C"
+				},{
+					"direction":"north",
+					"neighbor": "kitchen1"
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/hall/hall_D_north.jpg"					
+				},{
+					"direction":"east",	
+					"path": "resources/views/hall/hall_D_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/hall/hall_D_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/hall/wall.jpg"
+				}
+			],
+			"description" : "This is the entries of RoomD and kitchen",
+			"logicmap" : "resources/logicmap/hall_D.jpg"
+			
+		},{
+			"name" : "kitchen1",
+			"exits" : [
+				{
+					"direction":"east",
+					"neighbor": "kitchen2"				
+				},{
+					"direction":"south",
+					"neighbor": "hall_D"
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/kitchen/kitchen1_north.jpg"					
+				},{
+					"direction":"east",	
+					"path": "resources/views/kitchen/kitchen1_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/kitchen/kitchen1_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/kitchen/kitchen1_west.jpg"
+				}
+			],
+			"description" : "You are at kitchen",
+			"logicmap" : "resources/logicmap/kitchen1.jpg"
+			
+		},{
+			"name" : "kitchen2",
+			"exits" : [
+				{
+					"direction":"west",
+					"neighbor": "kitchen1"				
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/kitchen/kitchen2_north.jpg"				
+				},{
+					"direction":"east",	
+					"path": "resources/views/kitchen/kitchen2_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/kitchen/kitchen2_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/kitchen/kitchen2_west.jpg"
+				}
+			],
+			"description" : "You are still at kitchen",
+			"logicmap" : "resources/logicmap/kitchen2.jpg"
+			
+		},{
+			"name" : "bathroom",
+			"exits" : [
+				{
+					"direction":"west",
+					"neighbor": "hall_A"				
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/bathroom/bath_north.jpg"				
+				},{
+					"direction":"east",	
+					"path": "resources/views/bathroom/bath_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/bathroom/bath_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/bathroom/bath_west.jpg"
+				}
+			],
+			"description" : "You are at bathroom",
+			"logicmap" : "resources/logicmap/bathroom.jpg"
+		},{
+			"name" : "roomA",
+			"exits" : [
+				{
+					"direction":"north",
+					"neighbor": "hall_A"				
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/room/roomA_north.jpg"				
+				},{
+					"direction":"east",	
+					"path": "resources/views/room/roomA_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/room/roomA_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/room/roomA_west.jpg"
+				}
+			],
+			"description" : "You are at roomA",
+			"logicmap" : "resources/logicmap/roomA.jpg"
+		},{
+			"name" : "roomB",
+			"exits" : [
+				{
+					"direction":"west",
+					"neighbor": "hall_B"				
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/room/roomB_north.jpg"				
+				},{
+					"direction":"east",	
+					"path": "resources/views/room/roomB_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/room/roomB_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/room/roomB_west.jpg"
+				}
+			],
+			"description" : "You are at roomB",
+			"logicmap" : "resources/logicmap/roomB.jpg"
+		},{
+			"name" : "roomC",
+			"exits" : [
+				{
+					"direction":"west",
+					"neighbor": "hall_C"				
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/room/roomC_north.jpg"				
+				},{
+					"direction":"east",	
+					"path": "resources/views/room/roomC_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/room/roomC_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/room/roomC_west.jpg"
+				}
+			],
+			"description" : "You are at roomC",
+			"logicmap" : "resources/logicmap/roomC.jpg"
+		},{
+			"name" : "roomD",
+			"exits" : [
+				{
+					"direction":"west",
+					"neighbor": "hall_D"				
+				}
+			],
+			"pictures" : [
+				{
+					"direction":"north",
+					"path": "resources/views/room/roomD_north.jpg"				
+				},{
+					"direction":"east",	
+					"path": "resources/views/room/roomD_east.jpg"
+				},{
+					"direction":"south",
+					"path": "resources/views/room/roomD_south.jpg"
+				},{
+					"direction":"west",
+					"path": "resources/views/room/roomD_west.jpg"
+				}
+			],
+			"description" : "You are at roomD",
+			"logicmap" : "resources/logicmap/roomD.jpg"
+		}
+	],
+	"items" : [
+	{
+		"name" : "Candles",
+		"path" : "resources/items/candles.png"
+	},{
+		"name" : "Candy Cane",
+		"path" : "resources/items/candycane.png"
+	},{
+		"name" : "Gift",
+		"path" : "resources/items/gift.png"
+	},{
+		"name" : "Jingle",
+		"path" : "resources/items/jingle.png"
+	},{
+		"name" : "Mistletoe",
+		"path" : "resources/items/mistletoe.png"
+	},{
+		"name" : "Santa Corner Hat",
+		"path" : "resources/items/santacornerhat.png"
+	},{
+		"name" : "Snow Globe",
+		"path" : "resources/items/snowglobe.png"
+	},{
+		"name" : "Snow Man",
+		"path" : "resources/items/snowman.png"
+	},{
+		"name" : "Tree",
+		"path" : "resources/items/tree.png"
+	}
+	]
+}
